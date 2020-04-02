@@ -1,0 +1,7 @@
+main: de.ips.mlgrush.MLGRushPlugin
+name: MLGRushPlugin
+author: Elmo i.A. von IPS
+version: 0.1-A
+
+commands:
+  createarena:
