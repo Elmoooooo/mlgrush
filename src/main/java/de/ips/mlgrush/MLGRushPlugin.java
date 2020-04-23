@@ -44,7 +44,7 @@ public class MLGRushPlugin extends JavaPlugin implements Listener {
 
         this.gson = new GsonBuilder()
                 .setPrettyPrinting()
-                .registerTypeAdapter(ArenaTemplate.class, ArenaTemplate.ArenaTemplateDeserializer.class)
+                .registerTypeAdapter(ArenaTemplate.class, new ArenaTemplate.ArenaTemplateDeserializer())
                 .create();
 
         FileUtils.deleteDirectory(new File("arenas"));
