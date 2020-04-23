@@ -40,7 +40,7 @@ public class LobbyInventory {
                         CHALLENGE_ITEM);
 
         player.getInventory()
-                .setItem(MLGRushPlugin.getInstance().getGeneralConfig().getMiscData().getChallengeSlot(),
+                .setItem(MLGRushPlugin.getInstance().getGeneralConfig().getMiscData().getSettingSlot(),
                         SETTINGS_ITEM);
     }
 
