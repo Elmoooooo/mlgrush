@@ -3,6 +3,10 @@ package de.ips.mlgrush.storage.config;
 import de.ips.mlgrush.MLGRushPlugin;
 import lombok.SneakyThrows;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
 import java.lang.reflect.Constructor;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -26,7 +30,7 @@ public class ConfigReader {
         }
 
         return MLGRushPlugin.getInstance().getGson()
-                .fromJson(Files.newBufferedReader(configPath, StandardCharsets.UTF_8), clazz);
-    }
+                .fromJson(Files.newBufferedReader(configPath, StandardCharsets.UTF_8), clazz); //TODO fix bug
 
+    }
 }
